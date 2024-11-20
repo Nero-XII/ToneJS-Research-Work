@@ -1,0 +1,81 @@
+body{
+    background-color: #f1f1f1;
+    margin: 150px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bolder;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #494949;
+}
+
+.container {
+    flex-direction: column;
+    max-height: 450px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    width: 1260px;
+    height: 40px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    background-color: #494949;;
+    border-radius: 5px;
+    box-shadow: 0 5px 1px rgba(32, 32, 32, 0.2);
+}
+
+.opt {
+    color: white;
+}
+
+.piano-keyboard{
+    width: 1260px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+}
+
+.key{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 15px;
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    cursor: pointer;
+    padding: 5px;
+    user-select: none;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.white-key{
+    width: 60px;
+    height: 250px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 5px 1px rgba(32, 32, 32, 0.2);
+    z-index: 1;
+}
+
+.black-key{
+    width: 40px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 5px 1px rgba(32, 32, 32, 0.2);
+    z-index: 2;
+    position: absolute;
+}
